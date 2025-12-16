@@ -1,0 +1,41 @@
+/* BoringOS - Base Styles */
+/* Tailwind is loaded via CDN in index.html */
+
+/* Custom scrollbar for consistency */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3F1ED;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A3A39F;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666660;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default focus outline, add custom */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid #FF6B00;
+  outline-offset: 2px;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
