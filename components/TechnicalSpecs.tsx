@@ -56,7 +56,7 @@ export const TechnicalSpecs: React.FC = () => {
         
         <div className="mt-20 pt-10 border-t border-white/10 flex flex-col md:flex-row gap-12 justify-center text-center md:text-left">
             <div className="md:w-1/3 flex flex-col items-center md:items-start">
-                <h4 className="font-bold text-white mb-3 text-sm flex items-center gap-2">
+                <h4 className="font-extrabold text-white mb-3 text-sm flex items-center gap-2">
                     <div className="w-1 h-4 bg-boring-orange"></div>
                     Built to Last
                 </h4>
@@ -65,7 +65,7 @@ export const TechnicalSpecs: React.FC = () => {
                 </p>
             </div>
             <div className="md:w-1/3 flex flex-col items-center md:items-start">
-                <h4 className="font-bold text-white mb-3 text-sm flex items-center gap-2">
+                <h4 className="font-extrabold text-white mb-3 text-sm flex items-center gap-2">
                     <div className="w-1 h-4 bg-emerald-500"></div>
                     Unbreakable Core
                 </h4>

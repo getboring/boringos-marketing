@@ -58,7 +58,7 @@ export const Audience: React.FC = () => {
         </div>
         
         <div className="mt-24 text-center">
-            <p className="inline-block text-xs font-mono font-bold text-boring-gray-400 uppercase tracking-widest border-b border-boring-gray-300 pb-1">
+            <p className="inline-block text-xs font-mono font-extrabold text-boring-gray-400 uppercase tracking-widest border-b border-boring-gray-300 pb-1">
                 If this sounds like you, you are home.
             </p>
         </div>

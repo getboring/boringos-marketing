@@ -77,13 +77,13 @@ export const HowItWorks: React.FC = () => {
                                        </div>
                                        <div>
                                            <div className="text-xs font-bold text-boring-black">boringos-installer.iso</div>
-                                           <div className="text-[10px] font-mono font-bold text-boring-gray-500 mt-1">3.2 GB • SHA256 VERIFIED</div>
+                                           <div className="text-[10px] font-mono font-extrabold text-boring-gray-500 mt-1">3.2 GB • SHA256 VERIFIED</div>
                                        </div>
                                    </div>
                                    <div className="h-2 bg-boring-gray-200 rounded-full overflow-hidden">
                                        <div className="h-full bg-boring-black w-3/4"></div>
                                    </div>
-                                   <div className="mt-2 flex justify-between text-[9px] font-mono text-boring-gray-500 font-bold uppercase tracking-widest">
+                                   <div className="mt-2 flex justify-between text-[9px] font-mono text-boring-gray-500 font-extrabold uppercase tracking-widest">
                                        <span>Downloading...</span>
                                        <span>75%</span>
                                    </div>
@@ -98,8 +98,8 @@ export const HowItWorks: React.FC = () => {
                                    </div>
                                    <div className="relative z-10">
                                        <div className="flex items-center justify-between mb-8 border-b border-boring-gray-200 pb-4">
-                                           <span className="text-xs font-bold uppercase tracking-widest text-boring-gray-500">Target Drive</span>
-                                           <span className="text-xs font-mono font-bold text-boring-black">/dev/sda1</span>
+                                           <span className="text-xs font-extrabold uppercase tracking-widest text-boring-gray-500">Target Drive</span>
+                                           <span className="text-xs font-mono font-extrabold text-boring-black">/dev/sda1</span>
                                        </div>
                                        <div className="space-y-3">
                                            <div className="flex items-center gap-3 text-xs text-boring-gray-600 font-medium">

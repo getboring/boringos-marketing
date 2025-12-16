@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex gap-12 text-xs font-bold uppercase tracking-widest">
+        <div className="flex gap-12 text-xs font-extrabold uppercase tracking-widest">
             <div className="flex flex-col gap-4">
                 <span className="text-boring-gray-400 mb-2">Explore</span>
                 <a href="#philosophy" className="text-boring-black hover:text-boring-orange transition-colors no-underline">Manifesto</a>

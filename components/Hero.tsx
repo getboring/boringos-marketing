@@ -184,7 +184,7 @@ export const Hero: React.FC<HeroProps> = ({ onBuildClick }) => {
             </Button>
           </a>
           <a href="#why-boring" className="no-underline w-full sm:w-auto">
-            <button className="text-boring-gray-500 hover:text-boring-black font-medium transition-colors px-6 py-3 text-sm tracking-wide">
+            <button className="text-boring-gray-500 hover:text-boring-black font-extrabold transition-colors px-6 py-3 text-sm tracking-wide uppercase">
               Read the Manifesto →
             </button>
           </a>
@@ -203,7 +203,7 @@ export const Hero: React.FC<HeroProps> = ({ onBuildClick }) => {
                   
                   {/* Phase A: BIOS Logs */}
                   {systemState === 'booting' && (
-                      <div className="font-mono text-[10px] text-boring-gray-600 font-bold uppercase tracking-widest space-y-2 text-left w-64">
+                      <div className="font-mono text-[10px] text-boring-gray-600 font-extrabold uppercase tracking-widest space-y-2 text-left w-64">
                           {BOOT_LOGS.map((log) => (
                               <div key={log.id} className="flex justify-between">
                                   <span>{log.label}...</span>
@@ -233,9 +233,9 @@ export const Hero: React.FC<HeroProps> = ({ onBuildClick }) => {
                  <div className={layerClasses.desktopContent}>
                     {/* Top Bar */}
                     <div className={layerClasses.topBar}>
-                        <div className="text-[10px] font-bold text-boring-black cursor-default">Activities</div>
+                        <div className="text-[10px] font-extrabold text-boring-black cursor-default">Activities</div>
                         
-                        <div className="absolute left-1/2 -translate-x-1/2 text-[10px] font-mono font-medium text-boring-black flex gap-3">
+                        <div className="absolute left-1/2 -translate-x-1/2 text-[10px] font-mono font-extrabold text-boring-black flex gap-3">
                             <span>{new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })}</span>
                             <StatusClock />
                         </div>
@@ -275,13 +275,13 @@ export const Hero: React.FC<HeroProps> = ({ onBuildClick }) => {
             </div>
 
             {/* Hardware Status Footer */}
-            <div className="h-10 bg-boring-paper/30 border-t border-boring-gray-100 flex items-center justify-between px-4 text-[9px] font-mono text-boring-gray-600 uppercase tracking-widest z-30 relative select-none font-bold">
+            <div className="h-10 bg-boring-paper/30 border-t border-boring-gray-100 flex items-center justify-between px-4 text-[9px] font-mono text-boring-gray-600 uppercase tracking-widest z-30 relative select-none font-extrabold">
                 <div className="flex items-center gap-4">
                     <div className="flex flex-col gap-0.5">
                         <div className="flex justify-between w-24">
-                            <span className="text-[8px] text-boring-gray-500 font-bold">Distractions</span>
+                            <span className="text-[8px] text-boring-gray-500 font-extrabold">Distractions</span>
                             {/* Narrative: Peace = None */}
-                            {isPeace && <span className="text-[8px] text-emerald-600 font-bold">None</span>}
+                            {isPeace && <span className="text-[8px] text-emerald-600 font-extrabold">None</span>}
                         </div>
                         {/* Visual representation of network activity (Flatlines on Peace) */}
                         <div className="flex items-end gap-0.5 h-3 w-24">
@@ -294,17 +294,17 @@ export const Hero: React.FC<HeroProps> = ({ onBuildClick }) => {
                 
                 <div className="flex items-center gap-4 opacity-75">
                     <div className="flex items-center gap-2">
-                         <span className="text-[8px] text-boring-gray-500 font-bold">Your Data</span>
+                         <span className="text-[8px] text-boring-gray-500 font-extrabold">Your Data</span>
                          {/* Narrative: Home is warm. Blocked is cold. */}
-                         <span className={`font-bold transition-colors duration-1000 ${isPeace ? 'text-emerald-600' : 'text-boring-black'}`}>
+                         <span className={`font-extrabold transition-colors duration-1000 ${isPeace ? 'text-emerald-600' : 'text-boring-black'}`}>
                              {isPeace ? 'Home' : 'Securing'}
                          </span>
                     </div>
                     <div className="w-px h-3 bg-boring-gray-200"></div>
                     <div className="flex items-center gap-2">
-                         <span className="text-[8px] text-boring-gray-500 font-bold">Owner</span>
+                         <span className="text-[8px] text-boring-gray-500 font-extrabold">Owner</span>
                          {/* Narrative: Affirmation of ownership. */}
-                         <span className="font-bold text-boring-black">You</span>
+                         <span className="font-extrabold text-boring-black">You</span>
                     </div>
                 </div>
             </div>

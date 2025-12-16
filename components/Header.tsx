@@ -27,18 +27,18 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
         
         {/* Version Badge - "Stable" is a friendly word for reliability */}
-        <div className="hidden lg:flex items-center gap-2 px-3 py-1 rounded-sm bg-boring-gray-100/50 border border-boring-gray-200">
+        <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-boring-gray-100/50 border border-boring-gray-200">
            <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
-           <span className="text-[10px] font-mono font-bold text-boring-gray-600 uppercase tracking-widest">v1.0 Stable</span>
+           <span className="text-[10px] font-mono font-extrabold text-boring-gray-600 uppercase tracking-widest">v1.0 Stable</span>
         </div>
       </div>
 
       {/* Navigation - StoryBrand Friendly: The Promise, The Plan, The Tools */}
       <div className="hidden md:flex gap-1 items-center list-none bg-boring-gray-100/50 p-1 rounded-full border border-boring-gray-200/50">
-        <button onClick={onPhilosophy} className="text-boring-gray-600 hover:text-boring-black transition-colors text-xs font-bold uppercase tracking-widest bg-transparent border-none cursor-pointer px-4 py-2.5 rounded-full hover:bg-white">Our Promise</button>
-        <button onClick={onOperators} className="text-boring-gray-600 hover:text-boring-black transition-colors text-xs font-bold uppercase tracking-widest bg-transparent border-none cursor-pointer px-4 py-2.5 rounded-full hover:bg-white">Apps</button>
-        <button onClick={onNavigate} className="text-boring-gray-600 hover:text-boring-orange transition-colors text-xs font-bold uppercase tracking-widest bg-transparent border-none cursor-pointer px-4 py-2.5 rounded-full hover:bg-white">How It Works</button>
-        <button onClick={onSpecs} className="text-boring-gray-600 hover:text-boring-black transition-colors text-xs font-bold uppercase tracking-widest bg-transparent border-none cursor-pointer px-4 py-2.5 rounded-full hover:bg-white">Why It Lasts</button>
+        <button onClick={onPhilosophy} className="text-boring-gray-600 hover:text-boring-black transition-colors text-xs font-extrabold uppercase tracking-widest bg-transparent border-none cursor-pointer px-4 py-2.5 rounded-full hover:bg-white">Our Promise</button>
+        <button onClick={onOperators} className="text-boring-gray-600 hover:text-boring-black transition-colors text-xs font-extrabold uppercase tracking-widest bg-transparent border-none cursor-pointer px-4 py-2.5 rounded-full hover:bg-white">Apps</button>
+        <button onClick={onNavigate} className="text-boring-gray-600 hover:text-boring-orange transition-colors text-xs font-extrabold uppercase tracking-widest bg-transparent border-none cursor-pointer px-4 py-2.5 rounded-full hover:bg-white">How It Works</button>
+        <button onClick={onSpecs} className="text-boring-gray-600 hover:text-boring-black transition-colors text-xs font-extrabold uppercase tracking-widest bg-transparent border-none cursor-pointer px-4 py-2.5 rounded-full hover:bg-white">Why It Lasts</button>
       </div>
       
       <div>

@@ -142,7 +142,7 @@ export const WhyBoring: React.FC = () => {
                                         <div className="text-[10px] font-extrabold text-red-400 uppercase tracking-widest mb-1">Legacy Kernel</div>
                                         <div className="text-xl md:text-2xl font-bold text-white">High Noise</div>
                                     </div>
-                                    <div className="px-2 py-1 bg-red-500/10 border border-red-500/20 rounded text-[9px] font-mono font-bold text-red-500 uppercase">
+                                    <div className="px-2 py-1 bg-red-500/10 border border-red-500/20 rounded text-[9px] font-mono font-extrabold text-red-500 uppercase">
                                         Unstable
                                     </div>
                                 </div>
@@ -167,7 +167,7 @@ export const WhyBoring: React.FC = () => {
                                 </div>
                                 
                                 <div className="mt-auto pt-4 border-t border-white/5">
-                                    <div className="text-[9px] text-red-400/60 uppercase tracking-widest font-bold">Interrupt detected: Update_Svc.exe</div>
+                                    <div className="text-[9px] text-red-400/60 uppercase tracking-widest font-extrabold">Interrupt detected: Update_Svc.exe</div>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +182,7 @@ export const WhyBoring: React.FC = () => {
                                         <div className="text-[10px] font-extrabold text-emerald-500 uppercase tracking-widest mb-1">Boring Kernel</div>
                                         <div className="text-xl md:text-2xl font-bold text-white">Silence</div>
                                     </div>
-                                    <div className="px-2 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded text-[9px] font-mono font-bold text-emerald-500 uppercase">
+                                    <div className="px-2 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded text-[9px] font-mono font-extrabold text-emerald-500 uppercase">
                                         Optimal
                                     </div>
                                 </div>
@@ -207,7 +207,7 @@ export const WhyBoring: React.FC = () => {
                                 </div>
 
                                 <div className="mt-auto pt-4 border-t border-white/5">
-                                    <div className="text-[9px] text-emerald-500/60 uppercase tracking-widest font-bold">System Status: User_Focused</div>
+                                    <div className="text-[9px] text-emerald-500/60 uppercase tracking-widest font-extrabold">System Status: User_Focused</div>
                                 </div>
                             </div>
                         </div>

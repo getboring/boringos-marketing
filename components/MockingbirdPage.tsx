@@ -119,7 +119,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
            <div className="flex justify-center mb-8">
               <button 
                 onClick={onBack}
-                className="group flex items-center gap-2 text-[10px] font-mono font-bold uppercase tracking-widest text-boring-gray-400 hover:text-boring-orange transition-colors bg-white px-4 py-2 rounded-full border border-boring-gray-200 shadow-sm"
+                className="group flex items-center gap-2 text-[10px] font-mono font-extrabold uppercase tracking-widest text-boring-gray-400 hover:text-boring-orange transition-colors bg-white px-4 py-2 rounded-full border border-boring-gray-200 shadow-sm"
               >
                 <span className="text-boring-gray-300">/</span> Home <span className="text-boring-gray-300">/</span> <span className="text-boring-black group-hover:text-boring-orange">Blueprint</span>
               </button>
@@ -136,7 +136,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
            </p>
 
            {/* Badge */}
-           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-emerald-500/5 border border-emerald-500/20 text-emerald-700 text-[10px] font-bold uppercase tracking-widest font-mono">
+           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-emerald-500/5 border border-emerald-500/20 text-emerald-700 text-[10px] font-extrabold uppercase tracking-widest font-mono">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                 System Nominal
             </div>
@@ -172,8 +172,8 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                         <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-boring-gray-200 group-hover:bg-boring-orange transition-colors"></div>
                         <div className="pl-4">
                             <div className="flex items-center gap-3 mb-2">
-                                <span className="text-[10px] font-bold text-boring-gray-400 uppercase tracking-widest">Layer 03</span>
-                                <span className="px-1.5 py-0.5 bg-boring-gray-100 rounded text-[9px] font-mono font-bold text-boring-gray-500 uppercase">Mutable</span>
+                                <span className="text-[10px] font-extrabold text-boring-gray-400 uppercase tracking-widest">Layer 03</span>
+                                <span className="px-1.5 py-0.5 bg-boring-gray-100 rounded text-[9px] font-mono font-extrabold text-boring-gray-500 uppercase">Mutable</span>
                             </div>
                             <h3 className="text-xl font-bold text-boring-black">User Space</h3>
                             <p className="text-xs text-boring-gray-500 mt-1">Apps, Documents, Configs. The only layer you can touch.</p>
@@ -191,8 +191,8 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                         <div className="flex items-center justify-between relative z-10 pl-4">
                             <div>
                                 <div className="flex items-center gap-3 mb-2">
-                                    <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Layer 02</span>
-                                    <span className="px-1.5 py-0.5 bg-white/10 rounded text-[9px] font-mono font-bold text-emerald-400 uppercase">Immutable</span>
+                                    <span className="text-[10px] font-extrabold text-gray-500 uppercase tracking-widest">Layer 02</span>
+                                    <span className="px-1.5 py-0.5 bg-white/10 rounded text-[9px] font-mono font-extrabold text-emerald-400 uppercase">Immutable</span>
                                 </div>
                                 <h3 className="text-xl font-bold text-white">System Core</h3>
                                 <p className="text-xs text-gray-400 mt-1">Kernel, Drivers, Services. Read-only and verified.</p>
@@ -210,8 +210,8 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                         <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-boring-gray-400"></div>
                         <div className="pl-4">
                             <div className="flex items-center gap-3 mb-2">
-                                <span className="text-[10px] font-bold text-boring-gray-500 uppercase tracking-widest">Layer 01</span>
-                                <span className="px-1.5 py-0.5 bg-black/5 rounded text-[9px] font-mono font-bold text-boring-gray-600 uppercase">Physical</span>
+                                <span className="text-[10px] font-extrabold text-boring-gray-500 uppercase tracking-widest">Layer 01</span>
+                                <span className="px-1.5 py-0.5 bg-black/5 rounded text-[9px] font-mono font-extrabold text-boring-gray-600 uppercase">Physical</span>
                             </div>
                             <h3 className="text-xl font-bold text-boring-gray-700">Hardware</h3>
                             <p className="text-xs text-boring-gray-500 mt-1">CPU, Memory, Disk. The abstraction layer.</p>
@@ -246,7 +246,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                         <div className="flex justify-center mb-4">
                              <div className={`w-2 h-2 rounded-full transition-all duration-500 ${i <= activeCheck ? 'bg-emerald-500 scale-100' : 'bg-boring-gray-300 scale-75'}`}></div>
                         </div>
-                        <h4 className="text-xs font-bold uppercase tracking-widest text-boring-black mb-2">
+                        <h4 className="text-xs font-extrabold uppercase tracking-widest text-boring-black mb-2">
                             {check.label}
                         </h4>
                         <p className="text-sm text-boring-gray-500 font-medium">
@@ -272,7 +272,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                 
                 {/* Header */}
                 <div className="text-center mb-24 max-w-3xl mx-auto">
-                     <span className="text-xs font-bold uppercase tracking-widest text-boring-orange mb-4 block flex items-center justify-center gap-3">
+                     <span className="text-xs font-extrabold uppercase tracking-widest text-boring-orange mb-4 block flex items-center justify-center gap-3">
                         <div className="w-6 h-px bg-boring-orange/50"></div>
                         Under the hood
                         <div className="w-6 h-px bg-boring-orange/50"></div>
@@ -315,7 +315,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
 
                             <div className="flex gap-2 flex-wrap justify-center mt-auto">
                                 {item.features.map((feat, idx) => (
-                                    <span key={idx} className="text-[9px] uppercase font-bold text-boring-gray-500 bg-black/20 px-3 py-1.5 rounded border border-white/5">
+                                    <span key={idx} className="text-[9px] uppercase font-extrabold text-boring-gray-500 bg-black/20 px-3 py-1.5 rounded border border-white/5">
                                         {feat}
                                     </span>
                                 ))}
@@ -326,7 +326,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
 
                 {/* Footer Attribution */}
                 <div className="mt-24 pt-12 border-t border-white/10 flex flex-col items-center text-center gap-6 opacity-60 hover:opacity-100 transition-opacity">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-boring-gray-500 flex items-center gap-2">
+                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-boring-gray-500 flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-boring-gray-600"></span>
                         System Lineage
                     </span>
@@ -377,15 +377,15 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                     {/* Technical Artifacts */}
                     <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-[10px] font-mono text-boring-gray-400 uppercase tracking-widest mt-2 border border-boring-gray-200 bg-boring-paper px-6 py-3 rounded-lg">
                         <div className="flex items-center gap-2">
-                             <span className="font-bold text-boring-gray-500">Size:</span> 3.2 GB
+                             <span className="font-extrabold text-boring-gray-500">Size:</span> 3.2 GB
                         </div>
                         <div className="hidden sm:block w-px bg-boring-gray-300 h-4"></div>
                         <div className="flex items-center gap-2">
-                             <span className="font-bold text-boring-gray-500">Hash:</span> SHA256: 8f4a...2c1
+                             <span className="font-extrabold text-boring-gray-500">Hash:</span> SHA256: 8f4a...2c1
                         </div>
                         <div className="hidden sm:block w-px bg-boring-gray-300 h-4"></div>
                         <div className="flex items-center gap-2">
-                             <span className="font-bold text-boring-gray-500">Build:</span> 2025.04.12
+                             <span className="font-extrabold text-boring-gray-500">Build:</span> 2025.04.12
                         </div>
                     </div>
                 </div>
