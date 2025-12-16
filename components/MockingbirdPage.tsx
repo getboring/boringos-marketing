@@ -152,7 +152,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
             
             {/* Instruction Label */}
             <div className="text-center mb-12">
-                 <div className="inline-block text-[9px] font-mono text-boring-gray-400 uppercase tracking-widest border-b border-boring-gray-200 pb-1">
+                 <div className="inline-block text-[9px] font-mono font-extrabold text-boring-gray-500 uppercase tracking-widest border-b border-boring-gray-200 pb-1">
                     Interactive Architecture
                  </div>
             </div>
@@ -191,11 +191,11 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                         <div className="flex items-center justify-between relative z-10 pl-4">
                             <div>
                                 <div className="flex items-center gap-3 mb-2">
-                                    <span className="text-[10px] font-extrabold text-gray-500 uppercase tracking-widest">Layer 02</span>
+                                    <span className="text-[10px] font-extrabold text-boring-gray-500 uppercase tracking-widest">Layer 02</span>
                                     <span className="px-1.5 py-0.5 bg-white/10 rounded text-[9px] font-mono font-extrabold text-emerald-400 uppercase">Immutable</span>
                                 </div>
                                 <h3 className="text-xl font-bold text-white">System Core</h3>
-                                <p className="text-xs text-gray-400 mt-1">Kernel, Drivers, Services. Read-only and verified.</p>
+                                <p className="text-xs text-boring-gray-500 mt-1">Kernel, Drivers, Services. Read-only and verified.</p>
                             </div>
                             <div className="h-12 w-12 bg-white/5 rounded-xl flex items-center justify-center border border-white/10">
                                 <svg className="w-6 h-6 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
@@ -225,7 +225,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
             </div>
             
             <div className="text-center mt-8 opacity-60 transition-opacity hover:opacity-100">
-                <span className={`inline-flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest text-boring-gray-400 transition-transform duration-500 ${isStackExpanded ? 'translate-y-4' : 'translate-y-0'}`}>
+                <span className={`inline-flex items-center gap-2 text-[10px] font-mono font-extrabold uppercase tracking-widest text-boring-gray-500 transition-transform duration-500 ${isStackExpanded ? 'translate-y-4' : 'translate-y-0'}`}>
                     <span className={`transition-transform duration-500 ${isStackExpanded ? 'rotate-180' : ''}`}>▼</span>
                     {isStackExpanded ? "Click to Compact Stack" : "Hover to Explode View"}
                 </span>
@@ -252,7 +252,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                         <p className="text-sm text-boring-gray-500 font-medium">
                             {check.desc}
                         </p>
-                        <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity text-[9px] font-mono text-boring-gray-400 uppercase tracking-widest">
+                        <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity text-[9px] font-mono font-extrabold text-boring-gray-500 uppercase tracking-widest">
                             {i <= activeCheck ? check.status : 'PENDING...'}
                         </div>
                     </div>
@@ -293,13 +293,13 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                             
                             <div className="mb-8">
                                 <div className="inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full bg-white/5 border border-white/10">
-                                    <span className="text-[10px] font-mono text-boring-gray-500 uppercase tracking-widest">Module 0{index + 1}</span>
+                                    <span className="text-[10px] font-mono font-extrabold text-boring-gray-500 uppercase tracking-widest">Module 0{index + 1}</span>
                                     <div className="w-1 h-1 rounded-full bg-emerald-500"></div>
                                 </div>
                                 <h3 className="text-3xl font-bold text-white group-hover:text-boring-orange transition-colors mb-2">
                                     {item.title}
                                 </h3>
-                                <div className="text-[10px] font-mono text-boring-orange uppercase tracking-wide">
+                                <div className="text-[10px] font-mono font-extrabold text-boring-orange uppercase tracking-wide">
                                     {item.tech}
                                 </div>
                             </div>
@@ -330,7 +330,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                         <span className="w-2 h-2 rounded-full bg-boring-gray-600"></span>
                         System Lineage
                     </span>
-                    <div className="flex flex-wrap justify-center gap-8 text-[10px] font-mono text-boring-gray-500 uppercase tracking-widest">
+                    <div className="flex flex-wrap justify-center gap-8 text-[10px] font-mono font-extrabold text-boring-gray-500 uppercase tracking-widest">
                         <div className="flex items-center gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
                             Fedora
@@ -375,7 +375,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                     </a>
                     
                     {/* Technical Artifacts */}
-                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-[10px] font-mono text-boring-gray-400 uppercase tracking-widest mt-2 border border-boring-gray-200 bg-boring-paper px-6 py-3 rounded-lg">
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-[10px] font-mono font-extrabold text-boring-gray-500 uppercase tracking-widest mt-2 border border-boring-gray-200 bg-boring-paper px-6 py-3 rounded-lg">
                         <div className="flex items-center gap-2">
                              <span className="font-extrabold text-boring-gray-500">Size:</span> 3.2 GB
                         </div>

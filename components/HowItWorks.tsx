@@ -130,7 +130,7 @@ export const HowItWorks: React.FC = () => {
                                    <div className="font-mono text-xs space-y-2">
                                        <div className="text-emerald-500 font-bold">➜  ~ systemctl status</div>
                                        <div>● boring-os.service - The Quiet System</div>
-                                       <div className="pl-4 text-gray-400">Loaded: loaded (/etc/systemd/system/boring.service)</div>
+                                       <div className="pl-4 text-boring-gray-500">Loaded: loaded (/etc/systemd/system/boring.service)</div>
                                        <div className="pl-4 flex items-center gap-2">
                                            Active: <span className="text-emerald-500 font-bold">active (running)</span>
                                            <span className="text-gray-500">since Thu 2025-04-12</span>

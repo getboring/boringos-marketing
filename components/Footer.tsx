@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
         </div>
       </div>
       
-      <div className="max-w-6xl mx-auto mt-20 pt-8 border-t border-boring-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-boring-gray-400 font-mono uppercase tracking-widest">
+      <div className="max-w-6xl mx-auto mt-20 pt-8 border-t border-boring-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-boring-gray-500 font-mono font-extrabold uppercase tracking-widest">
          <p>
             © 2025 BoringOS. Open Source (MIT).
          </p>

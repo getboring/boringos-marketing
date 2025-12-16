@@ -18,7 +18,7 @@ export const TechnicalSpecs: React.FC = () => {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                <span className="text-[10px] font-mono font-extrabold uppercase tracking-widest text-gray-400 group-hover:text-emerald-500 transition-colors">
+                <span className="text-[10px] font-mono font-extrabold uppercase tracking-widest text-boring-gray-500 group-hover:text-emerald-500 transition-colors">
                     System Internals
                 </span>
             </div>
@@ -27,7 +27,7 @@ export const TechnicalSpecs: React.FC = () => {
                 Why it lasts.
             </h2>
 
-            <div className="text-xs font-mono font-extrabold text-gray-500 uppercase tracking-widest flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg border border-white/10">
+            <div className="text-xs font-mono font-extrabold text-boring-gray-500 uppercase tracking-widest flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg border border-white/10">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                 v1 Mockingbird / Stable
             </div>
@@ -36,7 +36,7 @@ export const TechnicalSpecs: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 border border-white/10">
           {TECHNICAL_SPECS.map((spec, index) => (
             <div key={index} className="group bg-[#1A1A19] p-8 hover:bg-[#222] transition-colors relative text-center">
-              <h4 className="text-[9px] font-extrabold uppercase tracking-widest text-gray-500 mb-4 group-hover:text-boring-orange transition-colors">
+              <h4 className="text-[9px] font-extrabold uppercase tracking-widest text-boring-gray-500 mb-4 group-hover:text-boring-orange transition-colors">
                 {spec.label}
               </h4>
               <div className="flex items-center justify-center gap-2 mb-4">
@@ -44,7 +44,7 @@ export const TechnicalSpecs: React.FC = () => {
                     {spec.value}
                 </p>
               </div>
-              <p className="text-xs text-gray-400 leading-relaxed font-medium transition-colors">
+              <p className="text-xs text-boring-gray-500 leading-relaxed font-medium transition-colors">
                 {spec.detail}
               </p>
               
@@ -60,7 +60,7 @@ export const TechnicalSpecs: React.FC = () => {
                     <div className="w-1 h-4 bg-boring-orange"></div>
                     Built to Last
                 </h4>
-                <p className="text-sm text-gray-400 leading-relaxed font-medium">
+                <p className="text-sm text-boring-gray-500 leading-relaxed font-medium">
                     Most software gets slower so you have to buy a new computer. We write efficient code so you can keep using your current laptop for years longer.
                 </p>
             </div>
@@ -69,7 +69,7 @@ export const TechnicalSpecs: React.FC = () => {
                     <div className="w-1 h-4 bg-emerald-500"></div>
                     Unbreakable Core
                 </h4>
-                <p className="text-sm text-gray-400 leading-relaxed font-medium">
+                <p className="text-sm text-boring-gray-500 leading-relaxed font-medium">
                    The core system is "read-only." This means viruses and bad apps physically cannot break your computer, because they aren't allowed to touch the engine.
                 </p>
             </div>

@@ -178,11 +178,13 @@ export const Hero: React.FC<HeroProps> = ({ onBuildClick }) => {
 
         {/* CTAs - The Action Layer */}
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center justify-center mb-32">
-          <a href="#download" className="no-underline w-full sm:w-auto">
-            <Button variant="primary" className="w-full sm:w-auto h-12 px-8 text-base shadow-xl shadow-boring-black/5 hover:shadow-boring-black/10">
+          <Button
+              variant="primary"
+              onClick={onBuildClick}
+              className="w-full sm:w-auto h-12 px-8 text-base shadow-xl shadow-boring-black/5 hover:shadow-boring-black/10"
+            >
               Start the Transition
             </Button>
-          </a>
           <a href="#why-boring" className="no-underline w-full sm:w-auto">
             <button className="text-boring-gray-500 hover:text-boring-black font-extrabold transition-colors px-6 py-3 text-sm tracking-wide uppercase">
               Read the Manifesto →
