@@ -29,7 +29,7 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Version Badge - "Stable" is a friendly word for reliability */}
         <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-boring-gray-100/50 border border-boring-gray-200">
            <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
-           <span className="text-[10px] font-mono font-extrabold text-boring-gray-600 uppercase tracking-widest">v1.0 Stable</span>
+           <span className="text-[10px] font-mono font-extrabold text-boring-gray-600 uppercase tracking-widest">v1.1 Stable</span>
         </div>
       </div>
 
