@@ -96,7 +96,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
         .stack-group.expanded .layer-2 { transform: translateY(0); }
         .stack-group.expanded .layer-1 { transform: translateY(5rem); }
         
-        .stack-group.expanded .connector-line { opacity: 1; height: 100%; }
+        .stack-group.expanded .connector-line { opacity: 1; transform: scaleY(1); }
       `}</style>
 
       {/* BACKGROUND - Technical Grid */}
@@ -164,7 +164,7 @@ export const MockingbirdPage: React.FC<MockingbirdPageProps> = ({ onBack }) => {
                 onClick={() => setIsStackExpanded(!isStackExpanded)}
             >
                 {/* Connector Lines (Vertical Axis) */}
-                <div className="absolute left-1/2 -translate-x-1/2 top-10 bottom-10 w-px bg-boring-gray-300 opacity-0 transition-opacity duration-500 connector-line"></div>
+                <div className="absolute left-1/2 -translate-x-1/2 top-10 bottom-10 w-px bg-boring-gray-300 opacity-0 transition-all duration-500 connector-line origin-center" style={{ transform: 'scaleY(0)' }}></div>
 
                 {/* Layer 3: Surface (Apps) */}
                 <div className="layer-3 relative z-30 transition-all duration-700 bezier-premium max-w-2xl mx-auto">

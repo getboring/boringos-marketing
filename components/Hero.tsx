@@ -26,21 +26,25 @@ const ICONS = {
 // --- SUB-COMPONENT: Clock ---
 const StatusClock = React.memo(() => {
   const [time, setTime] = useState("");
-  
+
   useEffect(() => {
     const update = () => setTime(new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false }));
     update();
-    
+
     const now = new Date();
     const msUntilNextMinute = (60 - now.getSeconds()) * 1000;
-    
-    const timeout = setTimeout(() => {
+
+    let intervalId: ReturnType<typeof setInterval> | null = null;
+
+    const timeoutId = setTimeout(() => {
         update();
-        const interval = setInterval(update, 60000); 
-        return () => clearInterval(interval);
+        intervalId = setInterval(update, 60000);
     }, msUntilNextMinute);
 
-    return () => clearTimeout(timeout);
+    return () => {
+      clearTimeout(timeoutId);
+      if (intervalId) clearInterval(intervalId);
+    };
   }, []);
 
   return <span>{time}</span>;
@@ -288,7 +292,7 @@ export const Hero: React.FC<HeroProps> = ({ onBuildClick }) => {
                         {/* Visual representation of network activity (Flatlines on Peace) */}
                         <div className="flex items-end gap-0.5 h-3 w-24">
                             {[...Array(16)].map((_, i) => (
-                                <div key={i} className={`w-1 bg-emerald-100 rounded-sm transition-all duration-300 ${!isPeace ? 'animate-pulse h-full bg-emerald-200' : 'h-[1px] bg-emerald-200'}`} style={{ animationDelay: `${i * 0.05}s` }}></div>
+                                <div key={i} className={`w-1 h-full rounded-sm transition-all duration-300 origin-bottom ${!isPeace ? 'animate-equalizer bg-emerald-300' : 'bg-emerald-200'}`} style={{ animationDelay: `${i * 0.05}s`, transform: isPeace ? 'scaleY(0.1)' : undefined }}></div>
                             ))}
                         </div>
                     </div>
