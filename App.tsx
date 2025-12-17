@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { WhyBoring } from './components/WhyBoring';
@@ -45,16 +46,17 @@ const App: React.FC = () => {
   if (currentPage === 'mockingbird') {
     return (
       <div className="min-h-screen bg-boring-white text-boring-black selection:bg-boring-orange selection:text-white font-sans">
-        <Header 
-          onNavigate={navigateToMockingbird} 
+        <Header
+          onNavigate={navigateToMockingbird}
           onHome={navigateToHome}
           onPhilosophy={() => scrollToSection('philosophy')}
           onOperators={() => scrollToSection('features')}
-          onSpecs={() => scrollToSection('specs')} 
-          onDownload={handleDownloadClick} 
+          onSpecs={() => scrollToSection('specs')}
+          onDownload={handleDownloadClick}
         />
         <MockingbirdPage onBack={navigateToHome} />
         <Footer />
+        <Analytics />
       </div>
     );
   }
@@ -132,6 +134,7 @@ const App: React.FC = () => {
         </section>
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 };
